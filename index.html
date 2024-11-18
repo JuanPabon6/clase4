@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <div class="container">
+        <form action="/recibirForm.html" method="post">
+
+            <fieldset>
+             <legend>datos personales</legend>
+        <label for="tDoc">Tipo texto</label><br>
+            <input type="text" id="tDoc" name="tDoc"><br> <br>
+        <label for="nDoc"> * Numero de documento</label><br>
+            <input type="text" id="nDoc" name="nDoc" required autofocus><br> <br>
+        <label for="nombres">Nombre</label><br>
+            <input type="text" id="nombres" name="nombres"><br> <br>
+        <label for="email">correo </label><br>
+             <input type="email" id="email"> <br><br>
+        <label for="clave">password</label><br>
+            <input type="password" id="clave"><br>
+        <label for="PrApellido">1er Apellido</label><br>
+            <input type="text" id="PrApellido" name="PrApellido" maxlength="10"><br> <br>
+        <label for="SgApellido">2do Apellido</label><br>
+            <input type="text" id="SgApellido" name="SgApellido"><br> <br>
+        <label for="Genero">Genero:</label> <br>
+            <input type="radio" name="Genero" id="M" value="M"> Masculino
+            <input type="radio" name="Genero"  id="F"> Femenino
+            <input type="radio" name="Genero" id="No" value="No"> No identificado
+            <input type="radio" name="Genero"  id="No">Prefiero no decirlo <br> <br>
+
+            <label for="">Nacionalidad</label><br>
+            <select name="nac" id="nac" multiple size="5">Nacionalidad
+                <option value="">seleccione...</option>
+                <option value="col">colombia</option>
+                <option value="chi">chileno</option>
+                <option value="cha">chamo</option>
+                <option value="bra" selected>brazuca</option>
+                <option value="bol">sin mar</option>
+            </select> <br> <br>|    
+        <label for="ciu">ciudad</label>
+            <input list="ciu">
+            <datalist id="ciu">
+               <option value="Med">Medellin</option>
+               <option value="Bel">bello</option>
+               <option value="Bar">Barrancabermeja</option>
+               <option value="bog">Bogota</option>
+               <option value="sin">Sincelejo</option>
+            </datalist><br><br><br>
+        <label for="file"> suba su hoja de vida</label><br>
+            <input type="file" id="file"> <br><br>
+
+        <label for="mes">fecha </label><br>
+             <input type="month"><br>
+             <input type="date"><br>
+             <input type="week"><br>
+             <input type="datetime"><br>
+             <input type="datetime-local"><br>
+           
+
+
+        </fieldset>
+        <fieldset>
+            <legend>gustos</legend>
+        <label for="Hobby">Hobby:</label> <br>
+            <input type="checkbox" name="Hobby" id="Hobby1">Musica
+            <input type="checkbox" name="Hobby" id="Hobby2">Pintar
+            <input type="checkbox" name="Hobby" id="Hobby3">Deporte
+            <input type="checkbox" name="Hobby" id="Hobby4">Leer
+            <input type="checkbox" name="Hobby" id="Hobby5">Bailar <br> <br>
+        <label for="pasion">Que le apasiona?</label> <br>
+            <textarea cols="55" rows="10" id="pasion">te pusiste nerviosa?</textarea> <br> <br>
+
+        </fieldset>
+
+
+
+            <button type="button" onclick="alert('cancelacion de matricula en proceso...  perro malparido')">cancelar matricula</button>
+            <input type="submit" value="Guardar">
+
+                <svg xmlns=""
+
+
+        </form>
+
+
+    </div>
+    <!--framework de bootstrap-->
+   
+</body>
+</html>
